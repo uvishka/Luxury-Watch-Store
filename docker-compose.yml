@@ -11,5 +11,6 @@ services:
     image: uvishka/watch-ci-backend:latest
     ports:
       - '5555:5555'
+      - '27017:27017'
 
 
