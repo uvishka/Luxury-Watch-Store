@@ -19,7 +19,7 @@ const Login = () => {
         };
 
         axios
-            .post("http://watch:5555/users/login", data)
+            .post("http://172.20.0.2:5555/users/login", data)
             .then((response) => {
                 if (response.status === 200) {
                     console.log("Login successful");
