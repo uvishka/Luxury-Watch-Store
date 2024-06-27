@@ -4,6 +4,8 @@ services:
     image: uvishka/watch-ci-frontend:latest
     ports:
       - '5173:5173'
+    networks:
+      - watch
     depends_on:
       - backend
 
@@ -12,5 +14,11 @@ services:
     ports:
       - '5555:5555'
       - '27017:27017'
+    networks:
+      - watch
+
+  networks:
+    design-flow:
+      driver: bridge
 
 
