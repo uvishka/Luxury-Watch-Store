@@ -6,34 +6,25 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import DefaultLayout2 from "../components/DefaultLayout2";
 
-
 const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
     const handleLogin = () => {
-        const data = {
-            username,
-            password,
-        };
+      
+        const hU = "isitha";
+        const hP = "12345";
 
-        axios
-            .post("http://13.213.19.121/:5555/users/login", data)
-            .then((response) => {
-                if (response.status === 200) {
-                    console.log("Login successful");
-                    message.success("User Login Successful");
-                    navigate("/homeusers"); 
-                } else {
-                    console.error("Login failed with status:", response.status);
-                    message.error("Login failed");
-                }
-            })
-            .catch((error) => {
-                console.error("Error during login:", error);
-                message.error("User Login Failed");
-            });
+        
+        if (username === hU && password === hP) {
+            console.log("Login successful");
+            message.success("User Login Successful");
+            navigate("/homeusers");
+        } else {
+            console.error("Login failed");
+            message.error("Login failed");
+        }
     };
 
     return (
@@ -46,7 +37,6 @@ const Login = () => {
                             style={{ width: "100%", height: "100%" }}
                             alt="WatchStore"
                         />
-                        
                     </Col>
 
                     <Col lg={8} className="text-left p-5">
