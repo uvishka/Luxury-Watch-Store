@@ -19,7 +19,7 @@ const Login = () => {
         };
 
         axios
-            .post("http://localhost:5555/users/login", data)
+            .post("http://13.213.19.121/:5555/users/login", data)
             .then((response) => {
                 if (response.status === 200) {
                     console.log("Login successful");
