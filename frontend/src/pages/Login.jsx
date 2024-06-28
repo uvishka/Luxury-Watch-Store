@@ -14,7 +14,7 @@ const Login = () => {
     const handleLogin = () => {
       
         const hU = "isitha";
-        const hP = "123456";
+        const hP = "1234";
 
         
         if (username === hU && password === hP) {
