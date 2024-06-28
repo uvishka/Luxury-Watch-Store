@@ -7,7 +7,7 @@ const Welcome = () => {
   return (
     <DefaultLayout className="p-2 bgc">
       <h2 className="text-3xl my-2 text-center bs1">
-        Welcome to WIJE Luxury Watch Store
+        Welcome to WIJE Luxury Watch Test1
       </h2>
       <Row gutter={[20, 16]}>
         {" "}
